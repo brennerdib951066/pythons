@@ -10,9 +10,9 @@ arquivo = '/home/brenner/Imagens/imagensBubble/loginBubble/statusFinanceiro/stat
 ##########################################################
 
 def minhaFuncao():
-    time.sleep(2)
-    for i in range(6):
-        #print(i)
+    time.sleep(3)
+    for i in range(7):
+        print(i)
         time.sleep(2)
         if i == 0:
             if i == 2:
@@ -26,8 +26,11 @@ def minhaFuncao():
             bot.moveTo(2106,808)
             bot.click()
             bot.press('down',presses=3)
-       # elif i == 4:
-
+        elif i == 6:
+            print('CHEGUEI')
+            time.sleep(1)
+            with bot.hold('ctrl'):
+                bot.press('w')
 
         else:
 
@@ -42,3 +45,10 @@ while True:
     print('Esperando me chmar')
     time.sleep(2)
 
+time.sleep(2)
+bot.click()
+bot.keyDown('ctrl')
+bot.press('w')
+bot.keyUp('ctrl')
+
+#bot.hotkey('ctrl','c')
