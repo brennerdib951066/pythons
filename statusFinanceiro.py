@@ -45,10 +45,10 @@ while True:
     print('Esperando me chmar')
     time.sleep(2)
 
-time.sleep(2)
-bot.click()
-bot.keyDown('ctrl')
-bot.press('w')
-bot.keyUp('ctrl')
+#time.sleep(2)
+#bot.click()
+#bot.keyDown('ctrl')
+#bot.press('w')
+#bot.keyUp('ctrl')
 
 #bot.hotkey('ctrl','c')
